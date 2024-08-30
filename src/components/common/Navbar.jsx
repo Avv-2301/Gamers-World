@@ -6,18 +6,17 @@ const Navbar = () => {
     <div>
       <header class="text-gray-600 body-font bg-blue-500">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img
-          src={''}
-          alt="Profile"
-          className="w-10 h-10 rounded-full object-cover cursor-pointer mr-4"
-        />
-            <span class="ml-3 text-xl">Gamer's Vault</span>
-          </a>
+            <span class="ml-3 text-xl title-font font-medium text-gray-900">Gamer's Vault</span>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <NavLink to={'/'}><a class="mr-5 text-white hover:text-gray-900">Home</a></NavLink>
-            <NavLink to={'/all-games'}><a class="mr-5 text-white hover:text-gray-900">Games</a></NavLink>
-            <NavLink to={'/contact-us'}><a class="mr-5 text-white hover:text-gray-900">Contact Us</a></NavLink>
+            <NavLink to={"/"}>
+              <a class="mr-5 text-white hover:text-gray-900">Home</a>
+            </NavLink>
+            <NavLink to={"/all-games"}>
+              <a class="mr-5 text-white hover:text-gray-900">Games</a>
+            </NavLink>
+            <NavLink to={"/contact-us"}>
+              <a class="mr-5 text-white hover:text-gray-900">Contact Us</a>
+            </NavLink>
             <a class="mr-5 text-white hover:text-gray-900">About Us</a>
           </nav>
           <Link to={"/login"}>
@@ -52,6 +51,13 @@ const Navbar = () => {
               </svg>
             </button>
           </Link>
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img
+              src={""}
+              alt="Profile"
+              className="w-10 h-10 rounded-full object-cover cursor-pointer ml-8"
+            />
+          </a>
         </div>
       </header>
     </div>
