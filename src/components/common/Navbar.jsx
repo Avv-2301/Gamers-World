@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import SliderImage1 from '../../assets/images/cropped-5120-2880-1305521.png'
 
 const Navbar = () => {
   return (
@@ -53,7 +54,7 @@ const Navbar = () => {
           </Link>
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <img
-              src={""}
+              src={SliderImage1}
               alt="Profile"
               className="w-10 h-10 rounded-full object-cover cursor-pointer ml-8"
             />
