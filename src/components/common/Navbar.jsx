@@ -10,9 +10,9 @@ const Navbar = () => {
           <img
           src={''}
           alt="Profile"
-          className="w-10 h-10 rounded-full object-cover cursor-pointer"
+          className="w-10 h-10 rounded-full object-cover cursor-pointer mr-4"
         />
-            <span class="ml-3 text-xl">BiGamer</span>
+            <span class="ml-3 text-xl">Gamer's Vault</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a class="mr-5 text-white hover:text-gray-900">Home</a>
