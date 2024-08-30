@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Link } from 'react-router-dom';
 
 
 const HomeSlider = () => {
@@ -24,7 +25,6 @@ const HomeSlider = () => {
             <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                 Before they sold out
-                {/* <br class="hidden lg:inline-block">readymade gluten */}
               </h1>
               <p class="mb-8 leading-relaxed">
                 Copper mug try-hard pitchfork pour-over freegan heirloom neutra
@@ -33,12 +33,16 @@ const HomeSlider = () => {
                 truffaut hexagon try-hard chambray.
               </p>
               <div class="flex justify-center">
+                <Link to={'/checkout'}>
                 <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-                  Button
+                  Buy Now
                 </button>
+                </Link>
+                <Link to={'/product-detail'}>
                 <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                  Button
+                  View
                 </button>
+                </Link>
               </div>
             </div>
           </div>
