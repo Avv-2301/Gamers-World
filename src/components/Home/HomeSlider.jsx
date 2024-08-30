@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Link } from 'react-router-dom';
+import SliderImage1 from '../../assets/images/cropped-5120-2880-1305521.png'
 
 
 const HomeSlider = () => {
@@ -19,12 +20,12 @@ const HomeSlider = () => {
               <img
                 class="object-cover object-center rounded"
                 alt="hero"
-                src="https://dummyimage.com/720x600"
+                src={SliderImage1}
               />
             </div>
             <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                Before they sold out
+                Grand Theft Auto 5
               </h1>
               <p class="mb-8 leading-relaxed">
                 Copper mug try-hard pitchfork pour-over freegan heirloom neutra
