@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,8 +15,8 @@ const Navbar = () => {
             <span class="ml-3 text-xl">Gamer's Vault</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 text-white hover:text-gray-900">Home</a>
-            <a class="mr-5 text-white hover:text-gray-900">Games</a>
+            <NavLink to={'/'}><a class="mr-5 text-white hover:text-gray-900">Home</a></NavLink>
+            <NavLink to={'/all-games'}><a class="mr-5 text-white hover:text-gray-900">Games</a></NavLink>
             <a class="mr-5 text-white hover:text-gray-900">Contact Us</a>
             <a class="mr-5 text-white hover:text-gray-900">About Us</a>
           </nav>

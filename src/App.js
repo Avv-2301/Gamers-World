@@ -7,6 +7,7 @@ import Register from "./components/Auth/Register";
 import Footer from "./components/common/Footer";
 import ProductDetail from "./pages/ProductDetail";
 import Checkout from "./pages/Checkout";
+import AllGames from "./pages/AllGames";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/product-detail" element={<ProductDetail/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/all-games" element={<AllGames/>}/>
       </Routes>
       <Footer />
     </div>
