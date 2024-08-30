@@ -8,6 +8,7 @@ import Footer from "./components/common/Footer";
 import ProductDetail from "./pages/ProductDetail";
 import Checkout from "./pages/Checkout";
 import AllGames from "./pages/AllGames";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/product-detail" element={<ProductDetail/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/all-games" element={<AllGames/>}/>
+        <Route path="/contact-us" element={<ContactUs/>}/>
       </Routes>
       <Footer />
     </div>

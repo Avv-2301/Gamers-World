@@ -17,7 +17,7 @@ const Navbar = () => {
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <NavLink to={'/'}><a class="mr-5 text-white hover:text-gray-900">Home</a></NavLink>
             <NavLink to={'/all-games'}><a class="mr-5 text-white hover:text-gray-900">Games</a></NavLink>
-            <a class="mr-5 text-white hover:text-gray-900">Contact Us</a>
+            <NavLink to={'/contact-us'}><a class="mr-5 text-white hover:text-gray-900">Contact Us</a></NavLink>
             <a class="mr-5 text-white hover:text-gray-900">About Us</a>
           </nav>
           <Link to={"/login"}>
